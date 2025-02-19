@@ -43,7 +43,7 @@ export function Navbar (){
                 <NavElement type={2} Name={"Log in"} />
             
 
-                <button className='font-noto px-6 top-[14px] absolute left-336 fixed py-[10px] text-black bg-white rounded-4xl'>Start free trail</button>
+                <button className='font-roboflex font-[600] px-6 top-[14px] absolute left-336 fixed py-[10px] text-black bg-white rounded-4xl'>Start free trail</button>
                 
             </div>
         </nav>
@@ -57,7 +57,7 @@ function NavElement({type, Name}){
     const [active, setActive] = useState(false);
 
     return(
-        <div onClick={()=>setActive(a=>!a)} className={`text-[15px] flex  ${active&&type=="1"?"":"hover:underline"}   underline-offset-3 items-center cursor-pointer gap-[3.8px] flex-row translate-y-[1px]`}>
+        <div onClick={()=>setActive(a=>!a)} className={`text-[17px] flex  ${active&&type=="1"?"":"hover:underline"}   underline-offset-3 items-center cursor-pointer gap-[3.8px] flex-row translate-y-[1px]`}>
             <span className=' font-roboto '>
             {Name}
             </span>

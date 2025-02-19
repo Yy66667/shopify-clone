@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
 @theme {  
-    --font-roboto: "Roboto", sans-serif; 
-    --font-noto: "Noto Sans", serif;
+    --font-roboto: "Roboto", Arial; 
+    --font-noto: "Noto Sans", Arial;
+    --font-roboflex: "Roboto Flex", Arial;
 }
 
