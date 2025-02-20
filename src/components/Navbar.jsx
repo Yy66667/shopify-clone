@@ -31,8 +31,8 @@ export function Navbar (){
     
     return(
         <>
-        <div >
-             <nav id="Navbar" className={`fixed w-full items-center justify-between px-[90px] border-[#3d3d3d] duration-150 text-white flex ${activeElement?"border-b-1 bg-black  ":navBg}`}>
+        <div  className='relative'>
+             <nav id="Navbar" className={`fixed w-full items-center bg-black justify-between px-[90px] border-[#3d3d3d] duration-150 text-white flex ${activeElement?"border-b-1  ":navBg}`}>
             <div className='flex items-center gap-12'>
                 <Logo className='w-[125px]' />
                 <div className='flex gap-[28.8px] items-center'>
@@ -51,21 +51,34 @@ export function Navbar (){
                 <button className='font-roboflex font-[600] h-11 px-6 text-black bg-white rounded-3xl'>Start free trial</button>
                 
             </div>
-        </nav>
-        <div className={`fixed pt-[30px] relative w-full items-center top-[73px] bg-black border-gray-700 justify-between  duration-150 text-white flex 
-          ${activeElement?"block":"hidden" }`}>
+             </nav>
+             <div className={` pt-[30px] fixed w-full items-center top-[73px] bg-black border-gray-700 justify-center  duration-150 text-white flex 
+             ${activeElement?"block":"hidden" }`}>
 
-          <div className=' font-roboto grid grid-flow-col gap-6 justify-center  w-full pb-6'>
+            <div className='relative font-roboto grid grid-flow-col gap-6 justify-center  w-full pb-8'>
      
           <NavComps logo={<StartLogo />} name={"Start"} arr={TextBoxArr1} />
           <NavComps logo={<SellLogo />} name={"Sell"} arr={TextBoxArr2} />
           <NavComps logo={<MarketLogo />} name={"Market"} arr={TextBoxArr3} />
           <NavComps logo={<ManageLogo />} name={"Manage"} arr={TextBoxArr4} />
 
-          </div>
-              
-          <div className=' bottom-0 right-0 w-full bg-[#18181b] border-t-2 border-[#2d2d2d]'>
-            hiiiiii
+
+            <div className='absolute grid grid-cols-4 divide-x-1 gap-6  px-22 text-[17px] bottom-[-94px] w-full bg-[#18181b] border-t-2 border-[#2d2d2d]  w-full py-[22px]'>
+                <div>
+                  <span>Shopify Developers</span>
+                  <div className='text-[15px] text-zinc-300'
+                  >Build with Shopify's powerful APIs</div>
+                </div>
+                <div>
+                  <span>Plus</span>
+                  <div className='text-[15px] text-zinc-300'>A commerce solution for growing digital brands</div>
+                </div>
+                <div>
+                <span>All Products</span>
+                <div className='text-[15px] text-zinc-300'>Explore all Shopify products & features</div>
+                </div>
+            </div>
+            
           </div>
         </div>
  
