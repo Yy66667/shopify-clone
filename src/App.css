@@ -6,8 +6,38 @@
 
 
 @theme {  
-    --font-roboto: "Roboto", Arial; 
+    --font-roboto: "Roboto", "sans-serif"; 
     --font-noto: "Noto Sans", Arial;
-    --font-roboflex: "Roboto Flex", Arial;
-}
+    --animate-lopin: lopin 3.5s ease-in-out infinite;
+      @keyframes lopin {    0% {  
+        opacity: 1  } 
 
+        5%{
+        
+          opacity: 1   }
+        }
+
+    --animate-hideout: hideout 3600ms ease-in-out infinite;
+      @keyframes hideout { 
+           0% {
+                  transform: translate(0px, 200px); opacity: 0;
+                   }
+
+                   30% {
+                    transform: translate(0,0) ; opacity: 1;
+                   }
+                   80% {
+                    transform: translate(0,0); opacity: 1;
+                   }
+                  
+                    98%{ 
+                    transform: translate(0px,-200px); 
+                  }
+                  100%{
+                    opacity: 0;
+                  }
+        }
+}
+body{
+  display: inline;
+}

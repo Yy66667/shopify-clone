@@ -32,10 +32,10 @@ export function Navbar (){
     return(
         <>
         <div  className='relative'>
-             <nav id="Navbar" className={`fixed w-full items-center bg-black justify-between px-[90px] border-[#3d3d3d] duration-150 text-white flex ${activeElement?"border-b-1  ":navBg}`}>
-            <div className='flex items-center gap-12'>
+             <nav id="Navbar" className={`fixed w-full items-center bg-black justify-center gap-[446px] px-[90px] border-[#3d3d3d] duration-150 z-10 text-white flex ${activeElement?"border-b-1  ":navBg}`}>
+            <div className='flex items-center gap-13'>
                 <Logo className='w-[125px]' />
-                <div className='flex gap-[28.8px] items-center'>
+                <div className='flex gap-[26px] items-center'>
                 <NavElement Active={activeElement} SetActive2={setActive} type={1} Name={"Solutions"} />
                 <NavElement Active={activeElement} SetActive2={setActive} type={2} Name={"Pricing"} />
                 <NavElement Active={activeElement} SetActive2={setActive} type={1} Name={"Resources"} />
@@ -51,8 +51,9 @@ export function Navbar (){
                 <button className='font-roboflex font-[600] h-11 px-6 text-black bg-white rounded-3xl'>Start free trial</button>
                 
             </div>
+            
              </nav>
-             <div className={` pt-[30px] fixed w-full items-center top-[73px] bg-black border-gray-700 justify-center  duration-150 text-white flex 
+             <div className={` pt-[30px] z-1 fixed w-full items-center top-[73px] bg-black border-gray-700 justify-center  duration-150 text-white flex 
              ${activeElement?"block":"hidden" }`}>
 
             <div className='relative font-roboto grid grid-flow-col gap-6 justify-center  w-full pb-8'>
@@ -206,11 +207,11 @@ function NavElement({type, Name, Active, SetActive2}){
     }   
 
     return(
-        <div onClick={()=>Action()} className={`text-[17px] flex  ${type===1&&Active===Name?"border-b-3 pb-[20px] pt-[23px]  ":"py-[23px] border-b-0 hover:underline"}   underline-offset-3 items-center cursor-pointer gap-[3.8px] flex-row translate-y-[1px] border-white`}>
+        <div onClick={()=>Action()} className={`text-[15.7px] flex  ${type===1&&Active===Name?"border-b-3 pb-[20px] pt-[23px]  ":"py-[23px] border-b-0 hover:underline"}   underline-offset-3 items-center cursor-pointer gap-[3.8px] flex-row translate-y-[1px] border-white`}>
             <span className=' font-roboto '>
             {Name}
             </span>
-            {type=="1"?<DownIcon className={`w-6 h-6 translate-y-[2px] ${Active===Name?"-scale-y-100":""} duration-500`} />:""}
+            {type=="1"?<DownIcon className={`w-6 h-6  ${Active===Name?"-scale-y-100 ":""} duration-500`} />:""}
         </div>
         )
 }
