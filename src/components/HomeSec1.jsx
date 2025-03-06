@@ -80,15 +80,15 @@ const newArr = [
           <div
             onMouseEnter={() => setVisible(true)}
             onMouseLeave={() => setVisible(false)}
-            className="text-lg flex flex-row w-65 h-14  font-normal tracking-normal duration-400 active:bg-white active:text-black  text-gray-200/80 hover:bg-white/12 justify-center rounded-4xl gap-3 items-center overflow-hidden"
+            className="text-[18px] flex flex-row w-65 h-14  font-normal tracking-[0.3px] duration-400 active:bg-white active:text-black  text-gray-200/80 hover:bg-white/12 justify-center rounded-4xl gap-3 items-center overflow-hidden"
           >
-            <div className={`flex duration-300 ${moveClass}`}>
+            <div className={`flex duration-200 ${moveClass}`}>
               <Play className="w-2 h-2 " />
             </div>
     
-          <div className=''>
+          <div className=' font-roboto font-[500]  active:text-black/30  text-white'>
     
-          why we build Shopify
+          Why we build Shopify
           </div> 
           </div>
         
@@ -100,24 +100,24 @@ export function HomeSection1(){
   <div  className="h-screen min-h-[800px] relative flex items-center justify-center">
       <video aria-label="Footage of Shopify merchants making sales, managing their business, and celebrating their success." autoplay="" class="absolute size-full object-cover" loop={true} muted="" playsinline="" src={v1} />
       
-      <div className="h-full top-70 absolute max-w-[1450px] w-full px-2 flex flex-col text-white font-roboto text-[96px] font-light z-2 tracking-[-8px]">
+      <div className="h-full top-68 absolute max-w-[1450px] w-full px-3 flex flex-col text-white font-roboto text-[95px] font-light z-2 tracking-[-2px]">
   
       <div className=' [word-spacing:-4px]'>
         Be the next
       </div>
       <NewTextSpitter />
   
-      <div className='w-[280px] leading-tight tracking-[-1px] text-[22px] items-start font-noto flex mt-2 mb-7 px-2 font-light'>
+      <div className='w-[290px] leading-[28px] tracking-[-1px] text-[24.5px] items-start font-roboto flex mt-5 mb-8 px- font-light'>
         Dream big, build fast, add grow far on Shopify.
       </div>
       <div className='flex justify-between w-full'>
   
-      <div className='w-[500px] flex tracking-[-2px] text-2xl items-center font-roboto  mb-2 px-2 font-thin gap-5'>
+      <div className='w-[500px] flex tracking-[-2px] text-2xl items-center font-roboto  mb-2 font-thin gap-4'>
         
-      <button className='font-roboto font-medium w-43 h-14 text-[18px] hover:bg-white/90 tracking-[-1px] text-black bg-white rounded-4xl'>Start free trial</button>
-      <div className=' text-[14px] tracking-normal font-medium '>
+      <button className='font-roboto font-medium w-42 h-[58px] text-[19px] hover:bg-white/90 tracking-[0px] text-black bg-white rounded-4xl'>Start free trial</button>
+      <div className=' text-[14px] tracking-[-0.1px] font-roboto font-normal leading-[20px] '>
         Get 3 days free 
-        <p>then 3 months for 20/month</p>
+        <p>then 3 months for ₹20/month</p>
       </div> 
       </div>
       <NavCompTextBox />

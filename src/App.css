@@ -1,45 +1,95 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-@theme {  
-    --font-roboto: "Roboto", "sans-serif"; 
-    --font-noto: "Noto Sans", "sans-serif";
-    --font-rale: "Raleway", "sans-serif";
-    --animate-lopin: lopin 3500ms ease-in-out 1;
-      @keyframes lopin {    0% {  
-        opacity: 1  } 
-
-        5%{
-        
-          opacity: 1   }
-        }
-
-    --animate-hideout: hideout 3500ms ease-in-out infinite;
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+}@theme {
+  --font-rale: "Raleway", sans-serif; 
+}@theme {
+  --font-noto: "Noto Sans", sans-serif;
+}@theme {
+  --font-pop: "Poppins", sans-serif;
+}
+@theme { 
+      --animate-hideout: hideout 3500ms ease-in-out infinite;
       @keyframes hideout { 
-        0% {
-          transform: translate(0px, 200px); opacity: 0;
-           }10% {
-            transform: translate(0px, 130px); opacity: 0;
-             }
-
-                   20% {
+                  0% {
+                    transform: translate(0px, 200px); opacity: 0;
+                   }
+                  10% {
+                    transform: translate(0px, 130px); opacity: 0;
+                   }
+                  20% {
                     transform: translate(0,-10px) ; opacity: 1;
                    }
-                   80% {
+                  80% {
                     transform: translate(0,-10px); opacity: 1;
                    }
-                  
-                    98%{ 
+                  98% { 
                     transform: translate(0px,-200px); opacity: 0;
                   }
-                  100%{
+                  100% {
                     opacity: 0;transform:translate(0px, 200px);
                   }
         }
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-65Md.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskDSPro-15UltTh.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskDSPro-25Th.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-55Rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-55Rg.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-65Md.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-75Bd.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/src/assets/fonts/NHaasGroteskTXPro-75Bd.ttf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@theme {
+  --font-neue: "Neue Haas Grotesk", sans-serif;
 }
