@@ -4,7 +4,7 @@ A pixel-perfect clone of the Shopify homepage built using **React** and **Tailwi
 
 ## 🌐 Live Demo
 
-[🔗 View Live] https://your-live-link.com](https://shopify-clone-2935j68sf-viveks-projects-88780485.vercel.app/
+[🔗 View Live] (https://shopify-clone-alpha.vercel.app/)
 
 ## ✨ Features
 
